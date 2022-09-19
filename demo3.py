@@ -9,22 +9,22 @@ import streamlit.components.v1 as components
 st.title("Data inference")
 
 count=0
-meanings=pd.read_csv(r"C:\Users\Admin\Downloads\Data_inference-main (1)\label_meanings.csv", engine="pyarrow")
+meanings=pd.read_csv(r"label_meanings.csv", engine="pyarrow")
 
 #train = pd.read_csv(r"C:\Users\Admin\Downloads\final_file.tsv",sep='\t', encoding='utf-8')
 
-df1=pd.read_csv("C:/Users/Admin/Documents/0 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
-df2=pd.read_csv("C:/Users/Admin/Documents/1 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
-df3=pd.read_csv("C:/Users/Admin/Documents/2 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
-df4=pd.read_csv("C:/Users/Admin/Documents/3 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
-df5=pd.read_csv("C:/Users/Admin/Documents/4 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
-df6=pd.read_csv("C:/Users/Admin/Documents/5 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
-df7=pd.read_csv("C:/Users/Admin/Documents/6 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
-df8=pd.read_csv("C:/Users/Admin/Documents/7 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df1=pd.read_csv("0 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df2=pd.read_csv("1 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df3=pd.read_csv("2 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df4=pd.read_csv("3 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df5=pd.read_csv("4 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df6=pd.read_csv("5 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df7=pd.read_csv("6 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
+df8=pd.read_csv("7 editeddd_final_file.tsv" ,  sep='\t', engine="pyarrow")
 train = pd.concat([df1,df2,df3,df4,df5,df6,df7,df8])   
 
 okk1 = pd.read_csv(
-    "C:/Users/Admin/Documents/sent_final_file.tsv", sep='\t',engine="pyarrow")
+    "sent_final_file.tsv", sep='\t',engine="pyarrow")
 
 print(train)
 print(train.shape)
@@ -32,14 +32,14 @@ print(okk1)
 print(okk1.shape)
 train = train.reset_index(drop=True)
 print(train)
-conf_mat=pd.read_csv(r"C:\Users\Admin\Downloads\Data_inference-main (1)\conf_mat.csv", engine="pyarrow")
+conf_mat=pd.read_csv(r"conf_mat.csv", engine="pyarrow")
 
 
 df = pd.read_csv(
-    r"C:\Users\Admin\Downloads\Data_inference-main (1)\final_file1.csv", engine="pyarrow")
+    r"final_file1.csv", engine="pyarrow")
 
 
-df_pred=pd.read_csv(r"C:\Users\Admin\Downloads\Data_inference-main (1)\result_file.csv", engine="pyarrow")
+df_pred=pd.read_csv(r"result_file.csv", engine="pyarrow")
 
 #check if test file and result file are consistent and add the prediction columns to the final_file 
 df['HEAD_PRED']=" "
@@ -54,7 +54,7 @@ for i in range(len(df)):
     break
 
 
-sent_df=pd.read_csv(r"C:\Users\Admin\Downloads\Data_inference-main (1)\test_sent.csv", engine="pyarrow")
+sent_df=pd.read_csv(r"test_sent.csv", engine="pyarrow")
 sent_df['SENT_NO'] = pd.to_numeric(sent_df['SENT_NO'])
 
 df['sentence']= " "
