@@ -1,0 +1,51 @@
+Label,Meaning(Sanskrit),Meaning(English)
+k1,kartaa,doer/agent/subject
+pk1,prayojaka karta,causer
+jk1,prayojya karta,causee
+mk1,madhyastha karta,mediator causer
+k1s,vidheya karta - karta samanadhikarana,noun complement of karta
+k2,karma,object/patient
+k2p,karma,"Goal, Destination"
+k2g,karma ,secondary karma of the same verb
+k2s,karma samanadhikarana,object complement
+k3,karana,instrument
+k4,sampradana ,recipient
+k4a,anubhava karta,Experiencer
+k5,apadana,source
+k5prk,prakruti apadana,source material’ in verbs denoting change of state
+k7t,kAlAdhikarana,location in time
+k7p,deshadhikarana,location in space
+k7,vishayadhikarana,location elsewhere
+k7a,--,according to
+k1u,sAdrishya,similarity/comparison
+k2u,sAdrishya,similarity/comparison
+k7pu,--,comparison is made with part of a place 
+r6,shashthi,genitive/possessive
+r6-k1,kartaa,of a conjunct verb (complex predicate)
+r6-k2,karma,of a conjunct verb (complex predicate)
+r6v,--,kA relation between a noun and a verb
+adv,kriyAvisheSaNa,adverbs - ONLY ‘manner adverbs’ have to be taken here
+sent-adv,--,Sentential Adverbs
+rd,prati,direction
+rh,hetu,reason
+rt,tadarthya,purpose
+ras-k1,upapada sahakArakatwa,Associative – same for any ras-k*
+ras-k2,upapada sahakArakatwa,Associative – same for any ras-k*
+ras-k4,upapada sahakArakatwa,Associative – same for any ras-k*
+ras-k7,upapada sahakArakatwa,Associative – same for any ras-k*
+ras-NEG,--,Negation in Associatives
+rs,relation samanadhikaran,noun elaboration
+rsp,--,relation between the starting point and the end point of a durative expression
+rad,--,address terms
+nmod relc,--,relative clause constructions modifying a noun
+rbmod relc,--,'jo’ construction modifying an adverb
+jjmod relc,--,‘jo’ construction modifying an adjective
+nmod,--,participles etc modifying nouns
+vmod,--,verb modifier
+jjmod,--,modifiers of the adjectives
+pof,--,part of units such as conjunct verbs
+ccof,--,co-ordination and sub-ordination
+fragof,--,Fragment of
+enm,--,enumerator
+rsym,--,tag for a symbol
+psp cl,,relation marked between a clause and the postposition following that clause
